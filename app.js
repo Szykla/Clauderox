@@ -62,7 +62,7 @@
   window.addEventListener('keydown', function (e) {
     if (e.altKey || e.ctrlKey || e.metaKey) return;
     var t = e.target.tagName;
-    if (t === 'INPUT' || t === 'TEXTAREA') return;
+    if (t === 'INPUT' || t === 'TEXTAREA' || t === 'VIDEO') return;
     var dir = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
     if (!dir) return;
     e.preventDefault();
